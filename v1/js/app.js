@@ -1,3 +1,20 @@
+$(window).on("load", function () {
+
+    $(".loader .inner").fadeOut(500, function () {
+        $(".loader").fadeOut(750)
+    });
+
+    //calling isotope
+    $(".items").isotope({
+        filter: "*",
+        animationOptions: {
+            duration: 1300,
+            easing: "linear",
+            queue: false
+        }
+    });
+});
+
 $(document).ready(function () {
     $('#slides').superslides({
         animation: "fade",
@@ -33,7 +50,11 @@ $(document).ready(function () {
         }
     });
 
+    //as soon as scrolled to skills section start animation
     const skillsTopOffSet = $(".skillsSection").offset().top;
+    const statsTopOffSet = $(".statsSection").offset().top;
+    let countUpFinished = false;
+
     $(window).scroll(function () {
         if (window.pageYOffset > skillsTopOffSet - $(window).height() + 200) {
             $('.chart').easyPieChart({
@@ -48,6 +69,68 @@ $(document).ready(function () {
                 }
             });
         }
-    })
+
+
+        if (!countUpFinished && window.pageYOffset > statsTopOffSet - $(window).height() + 200) {
+            $(".counter").each(function () {
+                const element = $(this);
+                const endVal = parseInt(element.text());
+                element.countup(endVal);
+            });
+            countUpFinished = true;
+        }
+    });
+
+    //setup for viewing items in full screen
+    $("[data-fancybox]").fancybox();
+
+
+    $("#filters a").click(function () {
+
+        $("#filters .current").removeClass("current");
+        $(this).addClass("current");
+
+        //getting the attribute of data filter from index and use it as filter
+        const selector = $(this).attr("data-filter");
+
+        $(".items").isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 1300,
+                easing: "linear",
+                queue: false
+            }
+        });
+        return false;
+    });
+
+    //disabling anchor tags redirect
+    $("#navigation li a").click(function (e) {
+        e.preventDefault();
+
+        //getting href that we clicked one
+        const targetElement = $(this).attr("href");
+        const targetPosition = $(targetElement).offset().top;
+        $("html, body").animate({scrollTop: targetPosition - 50},
+            "slow");
+    });
+
+    const nav = $("#navigation");
+    const navTop = nav.offset().top;
+
+    $(window).on("scroll", stickyNavigation);
+
+    function stickyNavigation() {
+        const body = $("body");
+
+        if ($(window).scrollTop() >= navTop) {
+            body.css("padding-top", nav.outerHeight() + "px");
+            body.addClass("fixedNav");
+        } else {
+            body.css("padding-top", 0);
+            body.removeClass("fixedNav");
+        }
+    }
+
 });
 
