@@ -32,6 +32,12 @@ $(document).ready(function () {
 
     $('.owl-carousel').owlCarousel({
         loop: true,
+        autoplay: true,
+        autoplayTimeout: 13000,
+        callbacks: true,
+        autoplayHoverPause: true,
+        nav: true,
+        margin: 10,
         items: 4,
         responsive: {
             0: {
@@ -90,7 +96,7 @@ $(document).ready(function () {
         $("#filters .current").removeClass("current");
         $(this).addClass("current");
 
-        //getting the attribute of data filter from index and use it as filter
+        //getting the attribute of data filter from index and use it as filter 
         const selector = $(this).attr("data-filter");
 
         $(".items").isotope({
@@ -104,8 +110,9 @@ $(document).ready(function () {
         return false;
     });
 
+
     //disabling anchor tags redirect
-    $("#navigation li a").click(function (e) {
+    $("#navigation li a, .arrowNav a").click(function (e) {
         e.preventDefault();
 
         //getting href that we clicked one
@@ -131,6 +138,12 @@ $(document).ready(function () {
             body.removeClass("fixedNav");
         }
     }
+
+    //dynamic year for footer
+    let today = new Date();
+    let year = today.getFullYear();
+    let footYear = document.getElementById("year");
+    footYear.textContent = year;
 
 });
 
