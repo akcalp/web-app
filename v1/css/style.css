@@ -83,7 +83,7 @@ body {
     max-width: 60%;
     border-radius: 45%;
     box-shadow: 5px 5px 10px 3px #19547b;
-    margin: -50px 0 -50px 130px;
+    margin: 50px 0 -50px 130px;
 }
 
 #aboutHeading{
@@ -93,6 +93,24 @@ body {
     letter-spacing: 10px;
     font-weight: 300;
     margin-top: -30px;
+}
+
+#skillsHead{
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 10px;
+    font-weight: 300;
+    margin-top: -30px;
+    color: #fff;
+}
+
+#subTitle {
+    color: #fff;
+    margin-bottom: 50px;
+    margin-top: -30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 .divider{
@@ -198,6 +216,24 @@ span .chart {
     font-size: 45px;
     margin-left: -20%;
     color: #444;
+}
+
+#resume {
+    color: #333333;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #333333;
+    border-radius: 3px;
+}
+
+#resume:hover {
+    fill: #fff;
+    transition: 1s;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #333333;
+
 }
 
 .contactButton {
@@ -392,7 +428,7 @@ span .chart {
     color: #333333;
     font-weight: 700;
     transition-duration: .5s;
-    font-size: 23px;
+    font-size: 20px;
 }
 
 #navbarNav {
