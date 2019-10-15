@@ -28,6 +28,8 @@ body {
     display: block;
 }
 
+
+
 /*prev, next button image*/
 .slides-navigation .prev,
 .slides-navigation .next {
@@ -46,6 +48,88 @@ body {
     right: 20px;
     background-image: url("../img/icons/next.png");
 }
+
+
+
+
+
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+
+.previous, .forward  {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    margin-left: -150px;
+    padding-top: 275px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    margin-right: -150px;
+}
+
+
+
+
+.forward {
+    right: 0;
+    border-radius: 0 0 0 3px;
+}
+
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/*.active, .dot:hover {*/
+/*    background-color: #717171;*/
+/*}*/
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+
+
+
+
+
+
 
 /*slider Message*/
 .titleMessage {
@@ -86,7 +170,7 @@ body {
     margin: 50px 0 -50px 130px;
 }
 
-#aboutHeading{
+#aboutHeading {
     font-size: 36px;
     margin-bottom: 50px;
     font-family: 'Open Sans', sans-serif;
@@ -95,7 +179,7 @@ body {
     margin-top: -30px;
 }
 
-#skillsHead{
+#skillsHead {
     font-size: 36px;
     margin-bottom: 50px;
     font-family: 'Open Sans', sans-serif;
@@ -113,7 +197,7 @@ body {
     font-weight: 300;
 }
 
-.divider{
+.divider {
     width: 250px;
     height: 1px;
     background: #19547b;
@@ -218,23 +302,88 @@ span .chart {
     color: #444;
 }
 
-#resume {
+.custom-btn {
+
     color: #333333;
     padding: 15px 20px;
     display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
     margin-top: 20px;
-    border: 1px solid #333333;
+    text-decoration: none;
+    letter-spacing: 2px;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+
+
+}
+
+.btn-2 {
+    border: none;
+    border-bottom: 2px solid #6699cc;
+    border-left: 2px solid #6699cc;
+    text-decoration: none;
+}
+
+.btn-2:before,
+.btn-2:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: #6699cc;
+    transition: all 0.3s ease;
+    text-decoration: none;
     border-radius: 3px;
 }
 
-#resume:hover {
-    fill: #fff;
-    transition: 1s;
+.btn-2:before {
+    height: 0%;
+    width: 2px;
     text-decoration: none;
-    color: #ffffff;
-    background-color: #333333;
-
 }
+
+.btn-2:after {
+    width: 0%;
+    height: 2px;
+    text-decoration: none;
+}
+
+.btn-2:hover:before {
+    height: 100%;
+    text-decoration: none;
+}
+
+.btn-2:hover:after {
+    width: 100%;
+    text-decoration: none;
+}
+
+
+#resume {
+    text-decoration: none;
+    color: #6699cc;
+    letter-spacing: 2px;
+    border-radius: 3px;
+}
+
+
+/*#resume:hover {*/
+/*    fill: #fff;*/
+/*    transition: 0.7s;*/
+/*    text-decoration: none;*/
+/*    color: #ffffff;*/
+/*    background-color: #316293;*/
+/*}*/
+
+.aboutIcons {
+    width: 30px;
+    margin-top: -75px;
+}
+
 
 .contactButton {
     color: #fff;
@@ -249,7 +398,7 @@ span .chart {
     fill: #fff;
     transition: 1s;
     text-decoration: none;
-    color: #3c6382;
+    color: #fff;
     background-color: #fff;
 }
 
@@ -412,7 +561,6 @@ span .chart {
 }
 
 
-
 #navigation li {
     padding: 0 10px;
     font-weight: 300;
@@ -526,9 +674,34 @@ span .chart {
 
 .owl-prev {
     left: 0px;
+    margin-left: -100px;
+    float: left;
+    margin-top: -30px;
 }
 
 .owl-next {
     right: 0px;
+    float: right;
+    margin-right: -100px;
+    margin-top: -30px;
 }
+
+.owl-next span,
+.owl-prev span{
+    border-radius: 10px;
+    /* height: 90px; */
+    border: 2px solid;
+    padding: 3px 3px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
