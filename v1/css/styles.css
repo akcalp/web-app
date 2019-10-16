@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:v1/css/styles.css
+>>>>>>> testing
 body {
     font-size: 14px;
     color: #333;
@@ -384,6 +388,12 @@ span .chart {
     margin-top: -75px;
 }
 
+<<<<<<< HEAD
+=======
+.aboutArticle{
+    margin-top: 15px;
+}
+>>>>>>> testing
 
 .contactButton {
     color: #fff;
@@ -705,3 +715,41 @@ span .chart {
 
 
 
+<<<<<<< HEAD
+=======
+========
+/*
+Error: Invalid CSS after "$test: ": expected expression (e.g. 1px, bold), was ""
+        on line 1 of /Users/alpakca/Desktop/Class Notes/LearningJSandGit/portfolio-app/v1/sass/styles.scss
+
+1: $test:
+
+Backtrace:
+/Users/alpakca/Desktop/Class Notes/LearningJSandGit/portfolio-app/v1/sass/styles.scss:1
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/lexer.rb:231:in `expected!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:723:in `assert_expr'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/script/parser.rb:68:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1134:in `sass_script'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:642:in `variable'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:686:in `block_contents'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"$test: \": expected expression (e.g. 1px, bold), was \"\"\A         on line 1 of /Users/alpakca/Desktop/Class Notes/LearningJSandGit/portfolio-app/v1/sass/styles.scss\A \A 1: $test:"; }
+>>>>>>>> testing:v1/css/style.css
+>>>>>>> testing
