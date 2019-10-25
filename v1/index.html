@@ -62,16 +62,16 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item active">
-                <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Stats</a>
+                <a class="nav-link" href="#timelineNav">Timeline</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#projects">Projects</a>
             </li>
         </ul>
     </div>
@@ -98,7 +98,6 @@
                 </h1>
 
 
-                <!--                <h4>My name is Alp</h4> -->
 
 
                 <article class="aboutArticle">
@@ -129,12 +128,7 @@
 
     <br>
 
-    <!-- The dots/circles -->
 
-
-    <!--    <a href="#" class="next">-->
-    <!--        <img src="img/icons/testing.png" alt="">-->
-    <!--    </a>-->
 
 
     <div class="container">
@@ -169,15 +163,7 @@
                         <canvas class="test" height="152" width="152"></canvas>
                     </span>
                     <h4>Javascript</h4>
-                    <p>Creating dynamic, interactive web apps</p>
-                </div>
-                <div class="skill">
-                    <span class="chart" data-percent="70">
-                        <span class="percent">70</span>
-                        <canvas height="152" width="152"></canvas>
-                    </span>
-                    <h4>SQL</h4>
-                    <p>Used in most on my school and working projects</p>
+                    <p>Creating full stack, interactive web apps</p>
                 </div>
                 <div class="skill">
                     <span class="chart" data-percent="75">
@@ -187,6 +173,22 @@
                     <h4>Java</h4>
                     <p>J2EE</p>
                 </div>
+                <div class="skill">
+                    <span class="chart" data-percent="60">
+                        <span class="percent">60</span>
+                        <canvas height="152" width="152"></canvas>
+                    </span>
+                    <h4>C#</h4>
+                    <p>Form & Console Applications</p>
+                </div>
+                <div class="skill">
+                    <span class="chart" data-percent="90">
+                        <span class="percent">90</span>
+                        <canvas height="152" width="152"></canvas>
+                    </span>
+                    <h4>SQL</h4>
+                    <p>J2EE</p>
+                </div>
             </div>
         </div>
     </div>
@@ -194,7 +196,7 @@
 </div>
 
 
-<div id="stats" class="statsSection section">
+<div id="timelineNav" class="statsSection section">
 
     <div class="container">
         <h2 class="timeline-header">Timeline</h2>
@@ -304,7 +306,7 @@
 </div>
 
 
-<div id="contact" class="contactSection section">
+<div id="projects" class="contactSection section">
 
     <section class="wrapper">
         <div class="container-fostrap">
@@ -502,85 +504,68 @@
             <div class="filter">
                 <ul id="filters">
                     <li><a href="#" data-filter="*" class="current">All</a></li>
-                    <li><a href="#" data-filter=".apps">Apps</a></li>
-                    <li><a href="#" data-filter=".me">Me</a></li>
-                    <li><a href="#" data-filter=".projects">Projects</a></li>
+                    <li><a href="#" data-filter=".java">Java</a></li>
+                    <li><a href="#" data-filter=".csharp">C#</a></li>
+                    <li><a href="#" data-filter=".js">Full Stack JS</a></li>
+                    <li><a href="#" data-filter=".unreal">Unreal Engine</a></li>
+                    <li><a href="#" data-filter=".arduino">Arduino</a></li>
                 </ul>
             </div>
 
             <div class="itemsContainer">
 
                 <ul class="items">
-                    <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li onclick="" class="java col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <div class="item">
-                            <img src="img/portfolio/thumbnails/arduino-sq.jpeg" alt="Arduino Picture">
+                            <img src="img/portfolio/thumbnails/cpu-menu-sq.png" alt="Java Scheduler">
 
                             <div class="icons">
-                                <a href="img/portfolio/arduino.jpeg" class="openButton" title="View image" data-fancybox
-                                   data-caption="IoT with Arduino">
+                                <a href="img/portfolio/cpu-menu.png" class="openButton" title="View image" data-fancybox
+                                   data-caption="Java Scheduler">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <a href="https://www.github.com/akcalp" target="_blank" class="projectLink" title="Link to Project">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imgOverlay"></div>
+                        </div>
+                    </li>
+                    <li onclick="" class="java col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img src="img/portfolio/thumbnails/cpu-priorty-sq.png" alt="Java Scheduler">
+
+                            <div class="icons">
+                                <a href="img/portfolio/cpu-priorty.png" class="openButton" title="View image" data-fancybox
+                                   data-caption="Java Scheduler">
                                     <i class="fa fa-search"></i>
                                 </a>
                                 <!--                                open in new tab-->
-                                <a href="" target="_blank" class="projectLink" title="Link to Project">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-
-                            <div class="imgOverlay"></div>
-                        </div>
-                    </li>
-
-                    <li onclick="" class="projects col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="item">
-                            <img src="img/portfolio/thumbnails/arduino-sq.jpeg" alt="Arduino Picture">
-
-                            <div class="icons">
-                                <a href="img/portfolio/arduino.jpeg" class="openButton" title="View image" data-fancybox
-                                   data-caption="IoT with Arduino">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                                <a href="" target="_blank" class="projectLink" title="Link to Project">
+                                <a href=https://www.github.com/akcalp"" target="_blank" class="projectLink" title="Link to Project">
                                     <i class="fa fa-link"></i>
                                 </a>
                             </div>
                             <div class="imgOverlay"></div>
                         </div>
                     </li>
-                    <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="item">
-                            <img src="img/portfolio/thumbnails/arduino-sq.jpeg" alt="Arduino Picture">
-
-                            <div class="icons">
-                                <a href="img/portfolio/arduino.jpeg" class="openButton" title="View image" data-fancybox
-                                   data-caption="IoT with Arduino">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                                <!--                                open in new tab-->
-                                <a href="" target="_blank" class="projectLink" title="Link to Project">
-                                    <i class="fa fa-link"></i>
-                                </a>
-                            </div>
-                            <div class="imgOverlay"></div>
-                        </div>
-                    </li>
-                    <li onclick="" class="projects col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li onclick="" class="java col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <div class="foo item">
-                            <img src="img/portfolio/thumbnails/arduino-sq.jpeg" alt="Arduino Picture">
+                            <img src="img/portfolio/thumbnails/cpu-sjf-sq.png" alt="Java Scheduler">
 
                             <div class="icons">
-                                <a href="img/portfolio/arduino.jpeg" class="openButton" title="View image" data-fancybox
-                                   data-caption="IoT with Arduino">
+                                <a href="img/portfolio/cpu-sjf.png" class="openButton" title="View image" data-fancybox
+                                   data-caption="Java Scheduler">
                                     <i class="fa fa-search"></i>
                                 </a>
                                 <!--                                open in new tab-->
-                                <a href="" target="_blank" class="projectLink" title="Link to Project">
+                                <a href="https://www.github.com/akcalp" target="_blank" class="projectLink" title="Link to Project">
                                     <i class="fa fa-link"></i>
                                 </a>
                             </div>
                             <div class="foo imgOverlay"></div>
                         </div>
                     </li>
-                    <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li onclick="" class="arduino col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <div class="item">
                             <img src="img/portfolio/thumbnails/arduino-sq.jpeg" alt="Arduino Picture">
 
@@ -594,37 +579,140 @@
                                     <i class="fa fa-link"></i>
                                 </a>
                             </div>
+
                             <div class="imgOverlay"></div>
                         </div>
                     </li>
-                    <li onclick="" class="projects col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li onclick="" class="js col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <div class="item">
-                            <img src="img/portfolio/thumbnails/arduino-sq.jpeg" alt="Arduino Picture">
+                            <img src="img/portfolio/thumbnails/camp-main-sq.png" alt="Full Stack Camping App">
 
                             <div class="icons">
-                                <a href="img/portfolio/arduino.jpeg" class="openButton" title="View image" data-fancybox
-                                   data-caption="IoT with Arduino">
+                                <a href="img/portfolio/camp-main.png" class="openButton" title="View image" data-fancybox
+                                   data-caption="Full Stack Camping App">
                                     <i class="fa fa-search"></i>
                                 </a>
                                 <!--                                open in new tab-->
-                                <a href="" target="_blank" class="projectLink" title="Link to Project">
+                                <a href="https://github.com/akcalp/camp-app" target="_blank" class="projectLink" title="Link to Project">
                                     <i class="fa fa-link"></i>
                                 </a>
                             </div>
                             <div class="imgOverlay"></div>
                         </div>
                     </li>
-                    <li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                    <li onclick="" class="js col-xs-6 col-sm-4 col-md-3 col-lg-3">
                         <div class="item">
-                            <img src="img/portfolio/thumbnails/arduino-sq.jpeg" alt="Arduino Picture">
+                            <img src="img/portfolio/thumbnails/camp-comment-sq.png" alt="Full Stack Camping App">
 
                             <div class="icons">
-                                <a href="img/portfolio/arduino.jpeg" class="openButton" title="View image" data-fancybox
-                                   data-caption="IoT with Arduino">
+                                <a href="img/portfolio/camp-comment.png" class="openButton" title="View image" data-fancybox
+                                   data-caption="Full Stack Camping App">
                                     <i class="fa fa-search"></i>
                                 </a>
                                 <!--                                open in new tab-->
-                                <a href="" target="_blank" class="projectLink" title="Link to Project">
+                                <a href="https://github.com/akcalp/camp-app" target="_blank" class="projectLink" title="Link to Project">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imgOverlay"></div>
+                        </div>
+                    </li>
+                    <li onclick="" class="java col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img src="img/portfolio/thumbnails/sms-server-send-sq.png" alt="Java SMS">
+
+                            <div class="icons">
+                                <a href="img/portfolio/sms-server-send.png" class="openButton" title="View image" data-fancybox
+                                   data-caption="Java SMS">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <!--                                open in new tab-->
+                                <a href="https://github.com/akcalp" target="_blank" class="projectLink" title="Link to Project">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imgOverlay"></div>
+                        </div>
+                    </li>
+                    <li onclick="" class="java col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img src="img/portfolio/thumbnails/sms-server-send-del-sq.png" alt="Java SMS">
+
+                            <div class="icons">
+                                <a href="img/portfolio/sms-server-list-delete.png" class="openButton" title="View image" data-fancybox
+                                   data-caption="Java SMS">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <!--                                open in new tab-->
+                                <a href="https://github.com/akcalp" target="_blank" class="projectLink" title="Link to Project">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imgOverlay"></div>
+                        </div>
+                    </li>
+                    <li onclick="" class="unreal col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img src="img/portfolio/thumbnails/unreal-interact-sq.png" alt="Unreal Engine Interaction">
+
+                            <div class="icons">
+                                <a href="img/portfolio/unreal-interact.png" class="openButton" title="View image" data-fancybox
+                                   data-caption="Unreal Interaction">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <!--                                open in new tab-->
+                                <a href="https://www.youtube.com/watch?v=0AlhdHGyz7Y&" target="_blank" class="projectLink" title="Link to Project">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imgOverlay"></div>
+                        </div>
+                    </li>
+                    <li onclick="" class="unreal col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img src="img/portfolio/thumbnails/unreal-fire-sq.png" alt="Unreal Engine Shooting">
+
+                            <div class="icons">
+                                <a href="img/portfolio/unreal-fire.png" class="openButton" title="View image" data-fancybox
+                                   data-caption="Unreal Engine Shooting">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <!--                                open in new tab-->
+                                <a href="https://www.youtube.com/watch?v=0AlhdHGyz7Y&" target="_blank" class="projectLink" title="Link to Project">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imgOverlay"></div>
+                        </div>
+                    </li>
+                    <li onclick="" class="unreal col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img src="img/portfolio/thumbnails/unreal-hs-sq.png" alt="Unreal Engine Shooting">
+
+                            <div class="icons">
+                                <a href="img/portfolio/unreal-hs.png" class="openButton" title="View image" data-fancybox
+                                   data-caption="Unreal Engine Shooting">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <!--                                open in new tab-->
+                                <a href="https://www.youtube.com/watch?v=0AlhdHGyz7Y&" target="_blank" class="projectLink" title="Link to Project">
+                                    <i class="fa fa-link"></i>
+                                </a>
+                            </div>
+                            <div class="imgOverlay"></div>
+                        </div>
+                    </li>
+                    <li onclick="" class="csharp col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                        <div class="item">
+                            <img src="img/portfolio/thumbnails/cs-main-sq.png" alt="C Sharp Main Page">
+
+                            <div class="icons">
+                                <a href="img/portfolio/cs-main-page.png" class="openButton" title="View image" data-fancybox
+                                   data-caption="C Sharp Main Page">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                                <!--                                open in new tab-->
+                                <a href="https://github.com/akcalp" target="_blank" class="projectLink" title="Link to Project">
                                     <i class="fa fa-link"></i>
                                 </a>
                             </div>
