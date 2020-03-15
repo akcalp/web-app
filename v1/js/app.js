@@ -140,12 +140,5 @@ $(document).ready(function () {
     }
 
 
-
-    //dynamic year for footer
-    let today = new Date();
-    let year = today.getFullYear();
-    let footYear = document.getElementById("year");
-    footYear.textContent = year;
-
 });
 
